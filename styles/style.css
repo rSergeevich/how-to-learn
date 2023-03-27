@@ -24,6 +24,7 @@
 }
 
 .header__title {
+  margin: 0;
   width: 730px;
   align-self: center;
   margin-left: 64px;
@@ -34,7 +35,9 @@
 }
 
 .header__subtitle {
-  width: 388px;
+  margin: 0;
+  max-width: 388px;
+  width: 100%;
   position: absolute;
   left: 64px;
   bottom: 30px;
@@ -111,7 +114,7 @@
   margin-bottom: 30px;
 }
 
-.two-columns__paragraph:nth-of-type(3) {
+.two-columns__paragraph:last-child {
   margin-bottom: 0;
 }
 
@@ -127,11 +130,12 @@
 }
 
 .section-title {
+  position: relative;
   text-align: center;
   width: 60%;
   margin: auto;
   margin-bottom: 20px;
-  margin-top: 100px;
+  margin-top: 0;
   line-height: 1.15;
   font-size: 60px;
   font-weight: 600;
@@ -169,20 +173,16 @@
 }
 
 .table__text {
+  margin: 0;
   line-height: 1.2;
   font-size: 18px;
   font-weight: normal;
   margin-top: 20px;
 }
 
-.table__text_bank {
-  margin: 0;
-  margin-top: 20px;
-}
-
 .feynman {
   margin: 0;
-  height: 890px;
+  box-sizing: border-box;
   position: relative;
   padding: 100px 0 0;
   background-color: #f2f2f2;
@@ -212,6 +212,7 @@
 }
 
 .feynman__subtitle {
+  margin: 0;
   line-height: 51px;
   font-size: 36px;
   font-weight: normal;
@@ -231,16 +232,19 @@
 
 .kaufman {
   background-color: #1f1f1f;
+  color: white;
   overflow: hidden;
   position: relative;
 }
 
 .kaufman__triangle {
+  background-image: url(../images/kaufman-triangle.svg);
+  background-size: cover;
   width: 877px;
   height: 877px;
   position: absolute;
-  top: 0;
   right: -210px;
+  top: 0;
   z-index: 0;
 }
 
@@ -306,22 +310,14 @@
   justify-content: space-between;
 }
 
+.footer__column {
+  display: flex;
+  flex-direction: column;
+}
+
 .footer__column_content_copyright {
   flex-basis: 711px;
-  display: flex;
-  flex-direction: column;
   justify-content: space-between;
-}
-
-.footer__column_content_info {
-  display: flex;
-  flex-direction: column;
-
-}
-
-.footer__column_content_social {
-  display: flex;
-  flex-direction: column;
 }
 
 .footer__column-link {
@@ -335,13 +331,16 @@
 }
 
 .footer__author {
+  margin: 0;
   line-height: 25px;
   font-size: 18px;
   font-weight: normal;
+  margin-top: 18px;
   margin-bottom: 18px;
 }
 
 .footer__column-heading {
+  margin: 0;
   line-height: 30px;
   font-size: 18px;
   font-weight: 600;
