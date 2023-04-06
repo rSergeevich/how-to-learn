@@ -1,0 +1,8 @@
+.footer__column_content_copyright {
+  flex-basis: 711px;
+  justify-content: space-between;
+}
+
+/*
+ Остальным модификаторам элемента column стили создавать не пришлоcь, спозиционировалось и зачлось на ревью и без них
+*/
