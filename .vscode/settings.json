@@ -38,5 +38,8 @@
   "prettier.trailingComma": "none",
   "liveServer.settings.donotVerifyTags": true,
   "javascript.suggest.paths": false,
-  "typescript.suggest.paths": false
+  "typescript.suggest.paths": false,
+  "[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features"
+  }
 }
